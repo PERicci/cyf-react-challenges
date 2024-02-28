@@ -1,12 +1,23 @@
-import { PlayerScore } from "../PlayerScore/PlayerScore"
+import { PlayerScore } from "../PlayerScore/PlayerScore";
 
 export const CountryCard = (props) => {
-  console.log(props);
-  
-  return <li>
-    <ul>
-      <h2></h2>
-      <PlayerScore />
-    </ul>
-  </li>
-}
+  const { countryName, playerScores } = props;
+
+  return (
+    <li>
+      <ul>
+        <h2>{countryName}</h2>
+        {playerScores
+          .slice()
+          .sort((a, b) => Number(b.s) - Number(a.s))
+          .map((player) => (
+            <PlayerScore
+              key={player.n + player.s}
+              playerName={player.n}
+              playerScore={Number(player.s)}
+            />
+          ))}
+      </ul>
+    </li>
+  );
+};

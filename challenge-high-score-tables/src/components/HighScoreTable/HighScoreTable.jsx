@@ -14,7 +14,7 @@ export const HighScoreTable = () => {
               <CountryCard
                 key={countryScore.name}
                 countryName={countryScore.name}
-                countryScores={countryScore.scores}
+                playerScores={countryScore.scores}
               />
             ))}
         </ul>
