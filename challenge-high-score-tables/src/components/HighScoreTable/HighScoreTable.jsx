@@ -1,4 +1,5 @@
-import { PlayerScore } from "../PlayerScore/PlayerScore";
+import { CountryCard } from "../CountryCard/CountryCard";
+import { allCountryScores } from "../../data/scores";
 
 export const HighScoreTable = () => {
   return (
@@ -6,7 +7,16 @@ export const HighScoreTable = () => {
       <h1>High Scores per Country</h1>
       <section>
         <ul>
-          <PlayerScore />
+          {allCountryScores
+            .slice()
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((countryScore) => (
+              <CountryCard
+                key={countryScore.name}
+                countryName={countryScore.name}
+                countryScores={countryScore.scores}
+              />
+            ))}
         </ul>
       </section>
     </>

@@ -1,3 +1,5 @@
 export const PlayerScore = () => {
-  return <>PlayerScore</>;
+  return <li>
+    PlayerScore
+  </li>;
 };

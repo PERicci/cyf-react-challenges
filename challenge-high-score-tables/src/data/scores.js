@@ -1,4 +1,4 @@
-let allCountryScores = [
+export const allCountryScores = [
   {
     name: "Ethiopia",
     scores: [{ n: "Sub", s: 9990 }, { n: "lucy", s: "4134234" }, { n: "DWH", s: 9999 }, { n: "Hanif", s: 999999999 }]
@@ -30,5 +30,3 @@ let allCountryScores = [
     scores: [{ n: "rahman", s: 700200 }, { n: "rayhan", s: 18238123 }, { n: "ali", s: 5400000 }]
   },
 ];
-
-export default allCountryScores;
