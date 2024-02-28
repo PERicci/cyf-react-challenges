@@ -1,9 +1,10 @@
 import './App.css'
+import { HighScoreTable } from './components/HighScoreTable/HighScoreTable'
 
 function App() {
   return (
     <>
-      High-Score-Tables
+      <HighScoreTable />
     </>
   )
 }
