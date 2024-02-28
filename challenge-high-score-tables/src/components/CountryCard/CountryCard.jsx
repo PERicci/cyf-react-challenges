@@ -1,11 +1,12 @@
 import { PlayerScore } from "../PlayerScore/PlayerScore";
+import './CountryCard.css'
 
 export const CountryCard = (props) => {
   const { countryName, playerScores } = props;
 
   return (
-    <li>
-      <ul>
+    <li className="country-card">
+      <ul className="player-score-list">
         <h2>{countryName}</h2>
         {playerScores
           .slice()

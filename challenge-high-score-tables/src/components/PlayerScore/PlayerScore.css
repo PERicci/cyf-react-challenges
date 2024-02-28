@@ -1,0 +1,12 @@
+.player-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  border-bottom: 1px solid #cccccca1;
+}
+
+.player-score p {
+  font-weight: bold;
+  color: rgb(255, 70, 70);
+}
