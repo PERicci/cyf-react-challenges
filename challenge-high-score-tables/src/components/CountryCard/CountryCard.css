@@ -1,0 +1,14 @@
+.country-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #dadada;
+  box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.719);
+
+  color: #1f1f1f;
+}
+
+.player-score-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}

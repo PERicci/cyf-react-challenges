@@ -1,0 +1,9 @@
+.country-list {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+
+  justify-content: center;
+  box-shadow: 0 2px 8px #ffffff42;
+  border-radius: 10px;
+}
