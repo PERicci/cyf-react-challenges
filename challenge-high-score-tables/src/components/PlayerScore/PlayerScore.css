@@ -6,6 +6,10 @@
   border-bottom: 1px solid #cccccca1;
 }
 
+.player-score:last-child {
+  border-bottom: none;
+}
+
 .player-score p {
   font-weight: bold;
   color: rgb(255, 70, 70);
