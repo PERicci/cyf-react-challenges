@@ -1,3 +1,18 @@
+h1 {
+  margin-top: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 1rem 0;
+
+  background-color: #242424;
+}
+
 .country-list {
   display: grid;
   padding: 1rem;
@@ -6,4 +21,10 @@
   justify-content: center;
   box-shadow: 0 2px 8px #ffffff42;
   border-radius: 10px;
+
+  margin: 175px auto 2rem;
+}
+
+#score-order {
+  box-shadow: 0 2px 8px #ffffff42;
 }

@@ -1,8 +1,8 @@
 import { PlayerScore } from "../PlayerScore/PlayerScore";
-import './CountryCard.css'
+import "./CountryCard.css";
 
 export const CountryCard = (props) => {
-  const { countryName, playerScores } = props;
+  const { countryName, playerScores, scoreOrder } = props;
 
   return (
     <li className="country-card">
@@ -10,7 +10,12 @@ export const CountryCard = (props) => {
         <h2>{countryName}</h2>
         {playerScores
           .slice()
-          .sort((a, b) => Number(b.s) - Number(a.s))
+          .sort((a, b) => {
+            if (scoreOrder === "desc") {
+              return Number(b.s) - Number(a.s);
+            }
+            return Number(a.s) - Number(b.s);
+          })
           .map((player) => (
             <PlayerScore
               key={player.n + player.s}
